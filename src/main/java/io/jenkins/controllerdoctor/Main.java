@@ -1,5 +1,19 @@
-package main.java.io.jenkins.controllerdoctor;
+package io.jenkins.controllerdoctor;
 
-public class Main {
-    
+import io.jenkins.controllerdoctor.cli.CommandLine;
+
+public final class Main {
+
+    private Main() {
+        // Utility class.
+    }
+
+    public static void main(String[] args) {
+        CommandLine commandLine = new CommandLine();
+
+        int exitCode = new picocli.CommandLine(commandLine)
+                .execute(args);
+
+        System.exit(exitCode);
+    }
 }
