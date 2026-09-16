@@ -1,0 +1,16 @@
+{
+  "computer": [
+    {
+      "displayName": "Built-In Node",
+      "description": "Controller executor",
+      "offline": false,
+      "temporarilyOffline": false,
+      "offlineCauseReason": null,
+      "numExecutors": 2,
+      "executors": [
+        { "currentExecutable": {} },
+        { "currentExecutable": null }
+      ]
+    }
+  ]
+}

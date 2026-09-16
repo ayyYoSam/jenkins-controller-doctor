@@ -1,0 +1,26 @@
+{
+  "plugins": [
+    {
+      "shortName": "git",
+      "longName": "Git",
+      "version": "5.8.0",
+      "requiredCore": "2.504.1",
+      "enabled": true,
+      "active": true,
+      "bundled": false,
+      "hasUpdate": false,
+      "dependencies": []
+    },
+    {
+      "shortName": "workflow-job",
+      "longName": "Pipeline: Job",
+      "version": "1540.v295eccc9778f",
+      "requiredCore": "2.504.3",
+      "enabled": true,
+      "active": true,
+      "bundled": false,
+      "hasUpdate": true,
+      "dependencies": []
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "displayName": "Jenkins",
+  "fullName": "Jenkins Controller",
+  "description": "Development controller",
+  "url": "http://localhost:8080/",
+  "version": "2.516.1",
+  "useSecurity": true
+}

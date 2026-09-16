@@ -1,5 +1,19 @@
-package main.tests.java.io.jenkins.controllerdoctor;
+package io.jenkins.controllerdoctor;
 
-public class MainTest {
-    
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+
+/**
+ * Basic tests for the application entry point.
+ */
+class MainTest {
+
+    @Test
+    void shouldExposeMainMethod() {
+        assertDoesNotThrow(() -> Main.class.getMethod(
+                "main",
+                String[].class
+        ));
+    }
 }
