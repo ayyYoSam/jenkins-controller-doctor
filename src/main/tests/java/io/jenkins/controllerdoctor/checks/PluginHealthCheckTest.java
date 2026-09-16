@@ -1,5 +1,36 @@
-package main.tests.java.io.jenkins.controllerdoctor.checks;
+package io.jenkins.controllerdoctor.checks;
 
-public class PluginHealthCheckTest {
-    
+import io.jenkins.controllerdoctor.checks.plugins.PluginHealthCheck;
+import io.jenkins.controllerdoctor.model.PluginInfo;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class PluginHealthCheckTest {
+
+    @Test
+    void shouldExposeMetadata() {
+        PluginHealthCheck check = new PluginHealthCheck();
+
+        assertNotNull(check.id());
+        assertNotNull(check.name());
+    }
+
+    @Test
+    void shouldBuildPluginModel() {
+        PluginInfo plugin = PluginInfo.builder()
+                .shortName("git")
+                .longName("Git")
+                .version("5.8.0")
+                .enabled(true)
+                .active(true)
+                .build();
+
+        assertEquals(
+                "git",
+                plugin.shortName()
+        );
+
+        assertTrue(plugin.enabled());
+    }
 }
