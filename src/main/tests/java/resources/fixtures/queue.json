@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "task": {
+        "name": "build-api"
+      },
+      "why": "Waiting for next available executor",
+      "blocked": false,
+      "buildable": true,
+      "stuck": false,
+      "inQueueSince": 1690000000000,
+      "stuckReason": null
+    }
+  ]
+}
